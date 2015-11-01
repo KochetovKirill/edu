@@ -31,22 +31,22 @@ let gch =
                 (i,time (fun () -> Task21.main lst |> ignore)) ]
             , Color = System.Drawing.Color.Red);
         Chart.Line( 
-            [ for i in 5..5..100 ->
+            [ for i in 5..5..6000 ->
                 let lst = getMyLst i
                 (i,time (fun () -> Task22.main lst |> ignore)) ]
             , Color = System.Drawing.Color.Green);
         Chart.Line( 
-            [ for i in 5..5..1000 ->
+            [ for i in 5..5..6000 ->
                 let arr = getArr i
                 (i,time (fun () -> Task23.main arr |> ignore)) ]
             , Color = System.Drawing.Color.Blue);
         Chart.Line( 
-            [ for i in 5..5..1000 ->
+            [ for i in 5..5..6000 ->
                 let arr = getArr i
                 (i,time (fun () -> Array.sort arr |> ignore)) ]
             , Color = System.Drawing.Color.Black);
         Chart.Line(
-            [ for i in 5..5..1000 ->
+            [ for i in 5..5..6000 ->
                 let lst = getLst i
                 (i,time (fun () -> List.sort lst |> ignore)) ]
             , Color = System.Drawing.Color.Yellow) ]
